@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Mini projects</title>
+   <link rel="stylesheet" href="Css/icons.css">
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="fullscr time-fullscr">
+         <div class="time-container">
+            <div class="container">
+               <time id="time"></time>
+               <h1 class="header">
+                  <span id="greeting"></span>
+                  <span id="nameHere" contenteditable="true" title="Enter your name here and store it"></span>
+               </h1>
+               <h2 class="header_2" title="Enter your focus here and store it">
+                  What is
+                  your focus today ?</h2>
+               <h2 id="focus" contenteditable="true"></h2>
+
+               <div class="arrow arrow_1">
+                  <i class="icangle-down fa-3x text-white"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Searching Item app -->
+      <div class="fullscr second-part">
+         <div class="bg-success mb-3">
+            <div class="container p-5">
+               <div class="row">
+                  <div class='col-md-6'>
+                     <h1 class="text-white font-weight-bold">Item Listener</h1>
+                  </div>
+                  <div class='col-md-6 align-self-center'>
+                     <input type="text" class="form-control" placeholder="Search items" id="filter">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container mb-3">
+            <div class="card card-body">
+               <h2>Add Items</h2>
+               <div class="row">
+                  <div class='col-md-6'>
+                     <form action="" id="proForm" class="form-inline mb-3">
+                        <input type="text" class="form-control mr-3 mb-2" id="proInp">
+                        <input type="submit" value="Submit" class="mb-2 btn btn-dark">
+                     </form>
+                  </div>
+                  <div class='col-md-6'>
+                     <div class="block bg-danger py-2 pl-3 font-weight-bold text-white" id="info">
+                     </div>
+                  </div>
+               </div>
+               <h2>Items</h2>
+               <ul class="list-group" id="proUl">
+                  <li class="list-group-item">John <button class="btn btn-danger btn-sm float-right delete">X</button>
+                  </li>
+                  <li class="list-group-item">Doe <button class="btn btn-danger btn-sm float-right delete">X</button>
+                  </li>
+                  <li class="list-group-item">Tom <button class="btn btn-danger btn-sm float-right delete">X</button>
+                  </li>
+                  <li class="list-group-item">Eliza <button class="btn btn-danger btn-sm float-right delete">X</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="arrow text-center mb-5">
+            <i class="icangle-down fa-3x arrow_2"></i>
+         </div>
+      </div>
+      <!-- Bmi calculator -->
+      <div class="fullscr py-2 third">
+         <div class="main text-center">
+            <div class="bmi">
+               <div class="display-4 bmi-header">Bmi Calculator</div>
+               <div class="container mt-3">
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Ism" id="name">
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Og'irlig(kg)" id="weight">
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Bo'y(metrda masalan 1.5metr)" id="height">
+                  </div>
+                  <div class="form-group text-center px-3">
+                     <button class="btn btn-primary btn-block" id="calculateBtn"
+                        onclick="calculateBmi()">Calculate</button>
+                  </div>
+                  <div class="row my-3">
+                     <div class="col-md-12 text-center">
+                        <div id="result"></div>
+                     </div>
+                  </div>
+                  <div id="img" class=""></div>
+               </div>
+            </div>
+         </div>
+         <div class="arrow arrow_3 text-center mb-4 mt-1">
+            <i class="icangle-down fa-3x text-dark "></i>
+         </div>
+      </div>
+      <!-- Footer section -->
+      <div class="fullscr footer-part text-white">
+         <div class="container">
+            <div class="thanks text-center">
+               <div class="display-3 mb-4">Thank you :)👍</div>
+               <div class="display-4 mb-4">
+                  For questions or suggestions:
+               </div>
+               <a title="My Telegram account here" target="_blank" href="https://t.me/AzizbekAslonov"
+                  class="infoblock btn btn-primary d-flex align-items-center">
+                  <span href=""> <i class="ictelegram-plane fa-3x mr-3"></i></span>
+                  <span class="suggestions" href="https://t.me/AzizbekAslonov">Click Here!</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="//code.jivosite.com/widget/dSXA5UmLNb" async></script>
+   <script src="main.js"></script>
+</body>
+
+</html>
